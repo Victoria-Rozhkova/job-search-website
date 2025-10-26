@@ -32,7 +32,7 @@
     "start": "concurrently \"npm run server\" \"npm run start:app\"",
     "build": "craco build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts"
