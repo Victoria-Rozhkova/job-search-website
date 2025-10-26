@@ -2,6 +2,7 @@
   "name": "job-search-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Victoria-Rozhkova.github.io/job-search-website",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@reduxjs/toolkit": "^1.9.3",
@@ -30,6 +31,8 @@
     "server": "json-server --watch db.json -m ./node_modules/json-server-auth -p 8000",
     "start": "concurrently \"npm run server\" \"npm run start:app\"",
     "build": "craco build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts"
@@ -60,6 +63,7 @@
     "concurrently": "^8.2.1",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^6.3.0",
     "json-server": "^0.17.3",
     "json-server-auth": "^2.1.0",
     "tailwindcss": "^3.2.7"
