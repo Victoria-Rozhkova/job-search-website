@@ -1,6 +1,6 @@
 # Job Search Website
 
-## [Посмотреть Demo](https://victoria-rozhkova.github.io/job-search-website/#/)
+## <a href="https://victoria-rozhkova.github.io/job-search-website/#/" target="_blank">Посмотреть Demo</a>
 
 * В проекте используется [json-server](https://www.npmjs.com/package/json-server) для собственного сервера
 * Написаны кастомные компоненты
